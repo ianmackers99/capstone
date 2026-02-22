@@ -7,6 +7,7 @@ The overall goal of the capstone project is to find the maximum output values of
 
 This mimics a common real-world scenario where data scientists are asked to make predictions based on limited initial information and then update those predictions as additional data is received. Practical skills in this area are in great demand in the job market.
 
+
 -- Input and Outputs --
 
 At the beginning of the challenge, students are given a small, initial input and output dataset for each function in the form of Numpy arrays. The number of features/dimensions (2-8) and the number of initial samples (10-40) varies according to the function.
@@ -41,6 +42,7 @@ The results returned by the black box might look like this:
 
 Students add the new queries and corresponding results to the Numpy arrays each week and use them to train their model the following week.
 
+
 -- Challenge Objectives --
 
 The overall goal of the capstone project is to find the maximum output values of each of the eight, hidden black box functions.
@@ -48,6 +50,7 @@ The overall goal of the capstone project is to find the maximum output values of
 This is tricky because students begin with a very small dataset and can only make one additional query per function per week. So, if they begin with 10 initial input and output data points for a function, after 5 weeks they will still have only 15 input and output datapoints for that function.
 
 To add to the challenge, the form of each function is unknown at the outset and there is a delay of several days between the student submitting their queries and receiving the results.
+
 
 -- Technical Approach --
 
