@@ -14,31 +14,31 @@ At the beginning of the challenge, students are given a small, initial input and
 
 For a 2-dimensional dataset, i.e. with 2 features, the inputs might look like this:
 
-•	0.66579958 0.12396913
+- 0.66579958 0.12396913
 
-•	0.87779099 0.7786275 
+- 0.87779099 0.7786275 
 
-•	0.14269907 0.34900513
+- 0.14269907 0.34900513
 
 And the corresponding outputs might look like this:
 
-•	0.53899612
+- 0.53899612
 
-•	0.42058624
+- 0.42058624
 
-•	-0.06562362
+- -0.06562362
 
 Students use these X and Y values to create a Gaussian Process to act as a surrogate for the true function.
 
 Students then use an acquisition function to generate a new sample point for each of the 8 functions. The sample points must be presented as a sequence of hyphen-separated numbers in the range 0 and 1, rounded to 6 decimal places. Each number represents the value of a feature and together the numbers form a query which the black box will consume and then generate a result. The number of features varies by function so a typical query for a function with two features would look like this:
 
-0.237256-0.049198
+- 0.237256-0.049198
 
 An eight-feature function would have eight hyphen-separated numbers, etc.
 
 The results returned by the black box might look like this:
 
-•	-1.06562362
+- -1.06562362
 
 Students add the new queries and corresponding results to the Numpy arrays each week and use them to train their model the following week.
 
@@ -62,13 +62,13 @@ Prior research indicates that Bayesian Optimisation and a Gaussian Process are e
 
 The most relevant ideas and techniques from that research are:
 
-•	We can create a surrogate model to represent the function we’re trying to map based on the limited number of datapoints we have at the beginning of the challenge
+- We can create a surrogate model to represent the function we’re trying to map based on the limited number of datapoints we have at the beginning of the challenge
 
-•	We can quantify the degree of uncertainty of the model at points in between our known datapoints.
+- We can quantify the degree of uncertainty of the model at points in between our known datapoints.
 
-•	We can use a variety of different acquisition functions to select promising regions of the search space to sample next.
+- We can use a variety of different acquisition functions to select promising regions of the search space to sample next.
 
-•	We can update the model each week, feeding back our latest findings an improving the accuracy of the model
+- We can update the model each week, feeding back our latest findings an improving the accuracy of the model
 
 Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle the capstone challenge.
 
@@ -76,11 +76,11 @@ Together, these factors make a compelling case for using Bayesian Optimisation a
 
 I’ve used Bayesian Optimisation by implementing:
 
-•	Numpy
+- Numpy
 
-•	GaussianProcessRegressor from Scikit-learn
+- GaussianProcessRegressor from Scikit-learn
 
-•	ConstantKernel from Scikit-learn
+- ConstantKernel from Scikit-learn
 
 - Upper Control Bound (UCB) acquisition functions
 
@@ -98,38 +98,36 @@ Week 5: I could see some large unexplored regions in F1 and F2 so overrode my mo
 
 ## Alternatives Considered
 
-
-
 Other libraries I could have used are:
 
-•	Logistic Regression or Support Vector Machine from scikit learn.
+- Logistic Regression or Support Vector Machine from scikit learn.
 
-•	Tensorflow and Keras
+- Tensorflow and Keras
 
-•	PyTorch
+- PyTorch
 
 I’ve used Numpy, a Gaussian Process and ConstantKernel because they perform particularly well given our very small dataset and the high cost of obtaining additional results.
 
-I haven’t used:
+I didn't use:
 
-•	Logistic Regression because I think it will struggle with non-linear data
+- Logistic Regression because I think it will struggle with non-linear data
 
-•	SVM because it’s sensitive to noise and requires data to be properly scaled
+- SVM because it’s sensitive to noise and requires data to be properly scaled
 
-•	Tensorflow, Keras or Pytorch because I don’t think they’ll cope well with our small dataset
+- Tensorflow, Keras or Pytorch because I don’t think they’ll cope well with our small dataset
 
 
 ## Documents Referenced
 
 I’ve used these resources which were provided by the faculty:
 
-•	Kelta, Zoumana. ‘Masting Bayesian optimisation in data science Links to an external site..’ Datacamp.
+- Kelta, Zoumana. ‘Masting Bayesian optimisation in data science Links to an external site..’ Datacamp.
 
-•	Chennu, Srivas, Andrew Maher, Christian Pangerl, et al. ‘Rapid and scalable Bayesian AB testing Links to an external site.’. IEEE. July 27, 2023. 
+- Chennu, Srivas, Andrew Maher, Christian Pangerl, et al. ‘Rapid and scalable Bayesian AB testing Links to an external site.’. IEEE. July 27, 2023. 
 
 And this resource based on personal research:
 
-•	https://colab.research.google.com/github/krasserm/bayesian-machine-learning/blob/master/bayesian_optimization.ipynb#scrollTo=iV-8w2jSwlKv
+- https://colab.research.google.com/github/krasserm/bayesian-machine-learning/blob/master/bayesian_optimization.ipynb#scrollTo=iV-8w2jSwlKv
 
 
 
