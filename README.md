@@ -84,7 +84,7 @@ I’ve used Bayesian Optimisation by implementing:
 
 - Upper Control Bound (UCB) acquisition functions
 
-- xpected Improvement (EI) acquisition functions
+- Expected Improvement (EI) acquisition functions
 
 Week 1: I wasn’t sure what to expect so used a conservative, exploratory approach for all functions
 
@@ -94,7 +94,9 @@ Week 3, I decided to conduct an experiment and use an Expected Improvement acqui
 
 Week 4: I used my model to select sample points for all functions. I lowered Xi for F8 because I think I've found the region of the global maximum.
 
-Week 5: I could see some large unexplored regions in F1 and F2 so overrode my model and manual selected sample points in the middle of those unexplored regions for those two functions only. I used my model to select sample points for the other functions.
+Week 5: I could see some large unexplored regions in F1 and F2 so overrode my model and manual selected sample points in the middle of those unexplored regions for those two functions only. I used my model to select sample points for all other functions.
+
+Week 6: tbd
 
 ## Alternatives Considered
 
