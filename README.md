@@ -103,6 +103,7 @@ Other libraries I could have used are:
 I’ve used Numpy, a Gaussian Process and ConstantKernel because they perform particularly well given our very small dataset and the high cost of obtaining additional results.
 
 I haven’t used:
+
 •	Logistic Regression because I think it will struggle with non-linear data
 
 •	SVM because it’s sensitive to noise and requires data to be properly scaled
