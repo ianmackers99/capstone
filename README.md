@@ -77,6 +77,7 @@ Together, these factors make a compelling case for using Bayesian Optimisation a
 -- Alternatives Considered --
 
 At present, the main libraries I’m using for the BBO challenge are:
+
 •	Numpy
 
 •	GaussianProcessRegressor from Scikit-learn
@@ -84,6 +85,7 @@ At present, the main libraries I’m using for the BBO challenge are:
 •	ConstantKernel from Scikit-learn
 
 Other libraries I could have used are:
+
 •	Logistic Regression or Support Vector Machine from scikit learn.
 
 •	Tensorflow and Keras
@@ -115,10 +117,13 @@ For week 3, I decided to conduct an experiment and use an Expected Improvement a
 -- Documents Referenced --
 
 I’ve used these resources which were provided by the faculty:
+
 •	Kelta, Zoumana. ‘Masting Bayesian optimisation in data science Links to an external site..’ Datacamp.
+
 •	Chennu, Srivas, Andrew Maher, Christian Pangerl, et al. ‘Rapid and scalable Bayesian AB testing Links to an external site.’. IEEE. July 27, 2023. 
 
 And this resource based on personal research:
+
 •	https://colab.research.google.com/github/krasserm/bayesian-machine-learning/blob/master/bayesian_optimization.ipynb#scrollTo=iV-8w2jSwlKv
 
 
