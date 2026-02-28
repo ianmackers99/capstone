@@ -63,31 +63,42 @@ Prior research indicates that Bayesian Optimisation and a Gaussian Process are e
 The most relevant ideas and techniques from that research are:
 
 •	We can create a surrogate model to represent the function we’re trying to map based on the limited number of datapoints we have at the beginning of the challenge
+
 •	We can quantify the degree of uncertainty of the model at points in between our known datapoints.
+
 •	We can use a variety of different acquisition functions to select promising regions of the search space to sample next.
+
 •	We can update the model each week, feeding back our latest findings an improving the accuracy of the model
 
 Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle the capstone challenge.
+
 
 
 -- Alternatives Considered --
 
 At present, the main libraries I’m using for the BBO challenge are:
 •	Numpy
+
 •	GaussianProcessRegressor from Scikit-learn
+
 •	ConstantKernel from Scikit-learn
 
 Other libraries I could have used are:
 •	Logistic Regression or Support Vector Machine from scikit learn.
+
 •	Tensorflow and Keras
+
 •	PyTorch
 
 I’ve used Numpy, a Gaussian Process and ConstantKernel because they perform particularly well given our very small dataset and the high cost of obtaining additional results.
 
 I haven’t used:
 •	Logistic Regression because I think it will struggle with non-linear data
+
 •	SVM because it’s sensitive to noise and requires data to be properly scaled
+
 •	Tensorflow, Keras or Pytorch because I don’t think they’ll cope well with our small dataset
+
 
 
 -- Technical Approach --
