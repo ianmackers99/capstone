@@ -1,5 +1,5 @@
-# capstone
-# Project Overview
+# Imperial Machine Learning - BBO Capstone Project
+## Project Overview
 
 The Black Box Optimisation (BBO) Capstone Project is a challenge designed to test a student’s knowledge and understanding of Machine Learning (ML) tools.
 
@@ -8,7 +8,7 @@ The overall goal of the capstone project is to find the maximum output values of
 This mimics a common real-world scenario where data scientists are asked to make predictions based on limited initial information and then update those predictions as additional data is received. Practical skills in this area are in great demand in the job market.
 
 
--- Input and Outputs --
+## Input and Outputs
 
 At the beginning of the challenge, students are given a small, initial input and output dataset for each function in the form of Numpy arrays. The number of features/dimensions (2-8) and the number of initial samples (10-40) varies according to the function.
 
@@ -43,7 +43,7 @@ The results returned by the black box might look like this:
 Students add the new queries and corresponding results to the Numpy arrays each week and use them to train their model the following week.
 
 
--- Challenge Objectives --
+## Challenge Objective
 
 The overall goal of the capstone project is to find the maximum output values of each of the eight, hidden black box functions.
 
@@ -52,7 +52,7 @@ This is tricky because students begin with a very small dataset and can only mak
 To add to the challenge, the form of each function is unknown at the outset and there is a delay of several days between the student submitting their queries and receiving the results.
 
 
--- Why Bayesian Optimisation ? --
+## Why Bayesian Optimisation ?
 
 There are two main drivers for using Bayesian Optimisation via a Gaussian Process for the capstone challenge:
 1.	We have a very small dataset
@@ -72,7 +72,7 @@ The most relevant ideas and techniques from that research are:
 
 Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle the capstone challenge.
 
--- Technical Approach --
+## Technical Approach
 
 I’ve used Bayesian Optimisation by implementing the Scikit Learn Gaussian Process library with a ConstantKernel and either an Upper Control Bound (UCB) or Expected Improvement (EI) acquisition function. I’ve considered other complementary methods such as logical regression and Support Vector Machines but don’t feel the benefit they might offer merits the additional complexity or investigation at present.
 
@@ -82,7 +82,7 @@ For week 2, I realised my model wasn’t exploring sufficiently. So, I increased
 
 For week 3, I decided to conduct an experiment and use an Expected Improvement acquisition function for all target functions to get a better understanding of how it performs relative to UCB. It made gains in three out of eight functions. 
 
--- Alternatives Considered --
+## Alternatives Considered
 
 At present, the main libraries I’m using for the BBO challenge are:
 
@@ -110,8 +110,7 @@ I haven’t used:
 •	Tensorflow, Keras or Pytorch because I don’t think they’ll cope well with our small dataset
 
 
-
--- Documents Referenced --
+## Documents Referenced
 
 I’ve used these resources which were provided by the faculty:
 
