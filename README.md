@@ -72,7 +72,15 @@ The most relevant ideas and techniques from that research are:
 
 Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle the capstone challenge.
 
+-- Technical Approach --
 
+I’ve used Bayesian Optimisation by implementing the Scikit Learn Gaussian Process library with a ConstantKernel and either an Upper Control Bound (UCB) or Expected Improvement (EI) acquisition function. I’ve considered other complementary methods such as logical regression and Support Vector Machines but don’t feel the benefit they might offer merits the additional complexity or investigation at present.
+
+For week 1, I wasn’t sure what to expect so used a conservative, exploratory approach for all functions
+
+For week 2, I realised my model wasn’t exploring sufficiently. So, I increased the Kappa value of my UCB acquisition function for all target functions except F1 and F2. I overrode my model and manually selected sample points for F1 and F2 after visualising the plot. Neither of the results I chose manually yielded an improvement but several of my other queries did.
+
+For week 3, I decided to conduct an experiment and use an Expected Improvement acquisition function for all target functions to get a better understanding of how it performs relative to UCB. It made gains in three out of eight functions. 
 
 -- Alternatives Considered --
 
@@ -101,17 +109,6 @@ I haven’t used:
 
 •	Tensorflow, Keras or Pytorch because I don’t think they’ll cope well with our small dataset
 
-
-
--- Technical Approach --
-
-I’ve used Bayesian Optimisation by implementing the Scikit Learn Gaussian Process library with a ConstantKernel and either an Upper Control Bound (UCB) or Expected Improvement (EI) acquisition function. I’ve considered other complementary methods such as logical regression and Support Vector Machines but don’t feel the benefit they might offer merits the additional complexity or investigation at present.
-
-For week 1, I wasn’t sure what to expect so used a conservative, exploratory approach for all functions
-
-For week 2, I realised my model wasn’t exploring sufficiently. So, I increased the Kappa value of my UCB acquisition function for all target functions except F1 and F2. I overrode my model and manually selected sample points for F1 and F2 after visualising the plot. Neither of the results I chose manually yielded an improvement but several of my other queries did.
-
-For week 3, I decided to conduct an experiment and use an Expected Improvement acquisition function for all target functions to get a better understanding of how it performs relative to UCB. It made gains in three out of eight functions. 
 
 
 -- Documents Referenced --
