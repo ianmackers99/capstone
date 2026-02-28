@@ -121,13 +121,13 @@ I didn't use:
 
 ## Documents Referenced
 
-I’ve used these resources which were provided by the faculty:
+I’ve used these references which were provided by the faculty:
 
 - Kelta, Zoumana. ‘Masting Bayesian optimisation in data science Links to an external site..’ Datacamp.
 
 - Chennu, Srivas, Andrew Maher, Christian Pangerl, et al. ‘Rapid and scalable Bayesian AB testing Links to an external site.’. IEEE. July 27, 2023. 
 
-And this resource based on personal research:
+And this reference based on personal research:
 
 - https://colab.research.google.com/github/krasserm/bayesian-machine-learning/blob/master/bayesian_optimization.ipynb#scrollTo=iV-8w2jSwlKv
 
