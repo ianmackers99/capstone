@@ -3,7 +3,7 @@
 
 The Black Box Optimisation (BBO) Capstone Project is a challenge designed to test a student’s knowledge and understanding of Machine Learning (ML) tools.
 
-The overall goal of the capstone project is to find the maximum output values of 8 hidden black box functions. To achieve this, student’s are encouraged to use a variety of tools to determine the next best point at which to sample the black box function. The results are fed back into the model each week so it progressively learns the shape of the functions.
+The overall goal of the capstone project is to find the maximum output values of 8 hidden black box functions. To achieve this, students are encouraged to use a variety of tools to determine the next best point at which to sample the black box function. The results are fed back into the model each week so it progressively learns the shape of the functions.
 
 This mimics a common real-world scenario where data scientists are asked to make predictions based on limited initial information and then update those predictions as additional data is received. Practical skills in this area are in great demand in the job market.
 
