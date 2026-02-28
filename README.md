@@ -1,5 +1,5 @@
 # capstone
--- Project Overview --
+# Project Overview
 
 The Black Box Optimisation (BBO) Capstone Project is a challenge designed to test a student’s knowledge and understanding of Machine Learning (ML) tools.
 
