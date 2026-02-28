@@ -74,23 +74,31 @@ Together, these factors make a compelling case for using Bayesian Optimisation a
 
 ## Technical Approach
 
-I’ve used Bayesian Optimisation by implementing the Scikit Learn Gaussian Process library with a ConstantKernel and either an Upper Control Bound (UCB) or Expected Improvement (EI) acquisition function. I’ve considered other complementary methods such as logical regression and Support Vector Machines but don’t feel the benefit they might offer merits the additional complexity or investigation at present.
-
-For week 1, I wasn’t sure what to expect so used a conservative, exploratory approach for all functions
-
-For week 2, I realised my model wasn’t exploring sufficiently. So, I increased the Kappa value of my UCB acquisition function for all target functions except F1 and F2. I overrode my model and manually selected sample points for F1 and F2 after visualising the plot. Neither of the results I chose manually yielded an improvement but several of my other queries did.
-
-For week 3, I decided to conduct an experiment and use an Expected Improvement acquisition function for all target functions to get a better understanding of how it performs relative to UCB. It made gains in three out of eight functions. 
-
-## Alternatives Considered
-
-At present, the main libraries I’m using for the BBO challenge are:
+I’ve used Bayesian Optimisation by implementing:
 
 •	Numpy
 
 •	GaussianProcessRegressor from Scikit-learn
 
 •	ConstantKernel from Scikit-learn
+
+- Upper Control Bound (UCB) acquisition functions
+
+- xpected Improvement (EI) acquisition functions
+
+Week 1: I wasn’t sure what to expect so used a conservative, exploratory approach for all functions
+
+Week 2, I realised my model wasn’t exploring sufficiently. So, I increased the Kappa value of my UCB acquisition function for all target functions except F1 and F2. I overrode my model and manually selected sample points for F1 and F2 after visualising the plot. Neither of the results I chose manually yielded an improvement but several of my other queries did.
+
+Week 3, I decided to conduct an experiment and use an Expected Improvement acquisition function for all target functions to get a better understanding of how it performs relative to UCB. It made gains in three out of eight functions. 
+
+Week 4: I used my model to select sample points for all functions. I lowered Xi for F8 because I think I've found the region of the global maximum.
+
+Week 5: I could see some large unexplored regions in F1 and F2 so overrode my model and manual selected sample points in the middle of those unexplored regions for those two functions only. I used my model to select sample points for the other functions.
+
+## Alternatives Considered
+
+
 
 Other libraries I could have used are:
 
