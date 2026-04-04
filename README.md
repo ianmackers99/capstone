@@ -145,7 +145,7 @@ I didn't use:
 
 I’ve used these references which were provided by the faculty:
 
-- Kelta, Zoumana. ‘Masting Bayesian optimisation in data science Links to an external site..’ Datacamp.
+- Kelta, Zoumana. ‘Mastering Bayesian optimisation in data science Links to an external site..’ Datacamp.
 
 - Chennu, Srivas, Andrew Maher, Christian Pangerl, et al. ‘Rapid and scalable Bayesian AB testing Links to an external site.’. IEEE. July 27, 2023. 
 
