@@ -14,6 +14,7 @@ This mimics a common real-world scenario where data scientists are asked to make
 - /code/tools - contains tools to process results and update the Numpy arrays
 - /data - contains the Numpy arrays and a plain text version of each
 - /documentation - contains a Datasheet for the dataset and a Model Card for the model
+- /queries and results - contains a full list of both for all functions plus an Excel plot of F1 and F2 sample points
 
 
 ## Input and Outputs
