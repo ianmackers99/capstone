@@ -127,6 +127,8 @@ Week 12:
 
 Week 13: 
 
+A detailed breakdown of the hyperparameters used is included in the Model Card in the /documentation directory
+
 
 ## Alternatives Considered
 
