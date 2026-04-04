@@ -10,10 +10,10 @@ This mimics a common real-world scenario where data scientists are asked to make
 
 ## Navigating this repo
 
-code - contains the code to run the model (Capstone W13 All Functions v9.py)
-code/tools - contains tools to process results and update the Numpy arrays
-data - contains the Numpy arrays and a plain text version of each
-documentation - contains a Datasheet for the dataset and a Model Card for the model
+- code - contains the code to run the model (Capstone W13 All Functions v9.py)
+- code/tools - contains tools to process results and update the Numpy arrays
+- data - contains the Numpy arrays and a plain text version of each
+- documentation - contains a Datasheet for the dataset and a Model Card for the model
 
 
 ## Input and Outputs
