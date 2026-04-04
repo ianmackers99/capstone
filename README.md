@@ -8,6 +8,14 @@ The overall goal of the capstone project is to find the maximum output values of
 This mimics a common real-world scenario where data scientists are asked to make predictions based on limited initial information and then update those predictions as additional data is received. Practical skills in this area are in great demand in the job market.
 
 
+## Navigating this repo
+
+code - contains the code to run the model (Capstone W13 All Functions v9.py)
+code/tools - contains tools to process results and update the Numpy arrays
+data - contains the Numpy arrays and a plain text version of each
+documentation - contains a Datasheet for the dataset and a Model Card for the model
+
+
 ## Input and Outputs
 
 At the beginning of the challenge, students are given a small, initial input and output dataset for each function in the form of Numpy arrays. The number of features/dimensions (2-8) and the number of initial samples (10-40) varies according to the function.
