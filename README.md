@@ -1,4 +1,4 @@
-# Imperial Machine Learning - BBO Capstone Project
+# Imperial College London - ML/AI Course - BBO Capstone Project
 ## Project Overview
 
 The Black Box Optimisation (BBO) Capstone Project is a challenge designed to test a student’s knowledge and understanding of Machine Learning (ML) tools.
@@ -82,9 +82,15 @@ I’ve used Bayesian Optimisation by implementing:
 
 - ConstantKernel from Scikit-learn
 
+- WhiteKernel from Scikit-learn
+
+- Matern Kernel from Scikit-learn
+
 - Upper Control Bound (UCB) acquisition functions
 
 - Expected Improvement (EI) acquisition functions
+
+I've also used an LLM during the later stages of the project to help select sample points close to existing maxima
 
 Week 1: I wasn’t sure what to expect so used a conservative, exploratory approach for all functions
 
@@ -96,7 +102,23 @@ Week 4: I used my model to select sample points for all functions. I lowered Xi 
 
 Week 5: I could see some large unexplored regions in F1 and F2 so overrode my model and manual selected sample points in the middle of those unexplored regions for those two functions only. I used my model to select sample points for all other functions.
 
-Week 6: tbd
+Week 6: My model wasn't exploring as much as I hope so I overrode my model again for F1 and manually selected a sample point.
+for it. I continued to use my GP with an Expected Improvement (EI) acquisition function for the other functions.
+
+Week 7: Switched back to UCB but will a much lower Kappa for all functions except F8. I tried a Matern Kernel for F8 hoping it would exploit the promising region that I found in Week 4.
+
+Week 8: Tried an LLM for functions 1 and 2. Retained the same ConstantKernal, UCB and low Kappa approach for functions 3, 4 and 6. Tried a Matern Kernel for F5 and a WhiteKernel for F8.
+
+Week 9: I finally found an improve for F2 last week using an LLM so I tried an LLM for all functions this week with exploitative prompts and hyperparameters.
+
+Week 10: I found an improvement for F6 last week using an LLM so I tried an LLM for all functions again this week with updated prompts and even more exploitative hyperparameters.
+
+Week 11: 
+
+Week 12: 
+
+Week 13: 
+
 
 ## Alternatives Considered
 
