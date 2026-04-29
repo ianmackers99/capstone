@@ -67,7 +67,7 @@ The most relevant ideas and techniques from that research are:
 
 - We can use a variety of different acquisition functions to select promising regions of the search space to sample next.
 
-- We can update the model each week, feeding back our latest findings an improving the accuracy of the model
+- We can update the model each week, feeding our latest findings back in to improve the accuracy of the model
 
 Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle this capstone challenge.
 
