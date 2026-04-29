@@ -3,9 +3,9 @@
 
 The Black Box Optimisation (BBO) Capstone Project is a challenge designed to test a student’s knowledge and understanding of Machine Learning (ML) tools.
 
-The overall goal of the capstone project is to find the maximum output values of 8 hidden black box functions. To achieve this, students are encouraged to use a variety of tools to determine the next best point at which to sample the black box function. The results are fed back into the model each week so it progressively learns the shape of the functions.
+The overall goal of the capstone project is to find the maximum output values of 8 hidden black box functions. To achieve this, students are encouraged to use a variety of tools to determine the next best point at which to query the black box function. The results are fed back into the model each week so it progressively learns the shape of the functions.
 
-This mimics a common real-world scenario where data scientists are asked to make predictions based on limited initial information and then update those predictions as additional data is received. Practical skills in this area are in great demand in the job market.
+This mimics a common, real-world scenario where data scientists are asked to make predictions based on limited initial information and then update those predictions as additional data is received.
 
 
 ## Navigating this repo
@@ -19,35 +19,25 @@ This mimics a common real-world scenario where data scientists are asked to make
 
 ## Input and Outputs
 
-At the beginning of the challenge, students are given a small, initial input and output dataset for each function in the form of Numpy arrays. The number of features/dimensions (2-8) and the number of initial samples (10-40) varies according to the function.
+At the beginning of the challenge, students are given a small, initial input and output dataset for each function in the form of Numpy arrays. The number of dimensions for each function varies between 2 and 8 and the number of initial samples between 10 and 40.
 
-For a 2-dimensional dataset, i.e. with 2 features, the inputs might look like this:
+For example, the input for a 5-dimensional function, i.e. with 5 features, might look like this:
 
-- 0.66579958 0.12396913
+0.007279 0.922324 0.065996 0.938621 0.028153
 
-- 0.87779099 0.7786275 
+And the corresponding output might look like this:
 
-- 0.14269907 0.34900513
+0.53899612
 
-And the corresponding outputs might look like this:
+Students use these input and output values to create a Gaussian Process which acts as a surrogate for the true function, which is then used to simulate its behaviour.
 
-- 0.53899612
+Each week, students pass a large number of candidate sample points through the surrogate model and use an acquisition function to assess them and recommend a new, best sample point for the coming week. The sample points must be presented to the function as a sequence of hyphen-separated numbers in the range 0 and 1, rounded to 6 decimal places. Each number represents the value of a feature and together the numbers form a query which the black box will consume and then generate a result. The number of features varies by function so a typical query for a 5-dimension function would look like this:
 
-- 0.42058624
-
-- -0.06562362
-
-Students use these X and Y values to create a Gaussian Process to act as a surrogate for the true function.
-
-Students then use an acquisition function to generate a new sample point for each of the 8 functions. The sample points must be presented as a sequence of hyphen-separated numbers in the range 0 and 1, rounded to 6 decimal places. Each number represents the value of a feature and together the numbers form a query which the black box will consume and then generate a result. The number of features varies by function so a typical query for a function with two features would look like this:
-
-- 0.237256-0.049198
-
-An eight-feature function would have eight hyphen-separated numbers, etc.
+0.007279-0.922324-0.065996-0.938621-0.028153
 
 The results returned by the black box might look like this:
 
-- -1.06562362
+1.06562362
 
 Students add the new queries and corresponding results to the Numpy arrays each week and use them to train their model the following week.
 
