@@ -91,9 +91,9 @@ I’ve used Bayesian Optimisation by implementing:
 
 I've also used:
 
-- LLM during the later stages of the project to help select sample points close to existing maxima
+- ChatGPT and Claude LLMs during the later stages of the project to help select sample points close to existing maxima
 
-- Principal Compenent Analysis (PCA) to identify those features which make significant difference to the result
+- Principal Compenent Analysis (PCA) to identify those features which make a significant difference to the result
 
 ## Week By Week Strategy
 
