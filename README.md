@@ -23,21 +23,21 @@ At the beginning of the challenge, students are given a small, initial input and
 
 For example, the input for a 5-dimensional function, i.e. with 5 features, might look like this:
 
-0.007279 0.922324 0.065996 0.938621 0.028153
+- 0.007279 0.922324 0.065996 0.938621 0.028153
 
 And the corresponding output might look like this:
 
-0.53899612
+- 0.53899612
 
 Students use these input and output values to create a Gaussian Process which acts as a surrogate for the true function, which is then used to simulate its behaviour.
 
 Each week, students pass a large number of candidate sample points through the surrogate model and use an acquisition function to assess them and recommend a new, best sample point for the coming week. The sample points must be presented to the function as a sequence of hyphen-separated numbers in the range 0 and 1, rounded to 6 decimal places. Each number represents the value of a feature and together the numbers form a query which the black box will consume and then generate a result. A typical query for a 5-dimension function would look like this:
 
-0.007279-0.922324-0.065996-0.938621-0.028153
+- 0.007279-0.922324-0.065996-0.938621-0.028153
 
 The results returned by the black box might look like this:
 
-1.06562362
+- 1.06562362
 
 Students add the new queries and corresponding results to the Numpy arrays each week and use them to train their model the following week.
 
