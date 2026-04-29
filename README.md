@@ -46,7 +46,7 @@ Students add the new queries and corresponding results to the Numpy arrays each 
 
 The overall goal of the capstone project is to find the maximum output values of each of the eight, hidden black box functions.
 
-This is tricky because students begin with a very small dataset and can only make one additional query per function per week. So, if they begin with 10 initial input and output data points for a function, after 5 weeks they will still have only 15 input and output datapoints for that function.
+This is tricky because students begin with a very small dataset and can only make one additional query per function per week. For example, if they begin with 10 initial input and output data points for a function, after 5 weeks they will still have only 15 input and output datapoints for that function.
 
 To add to the challenge, the form of each function is unknown at the outset and there is a delay of several days between the student submitting their queries and receiving the results.
 
