@@ -89,7 +89,13 @@ I’ve used Bayesian Optimisation by implementing:
 
 - Expected Improvement (EI) acquisition functions
 
-I've also used an LLM during the later stages of the project to help select sample points close to existing maxima
+I've also used:
+
+- LLM during the later stages of the project to help select sample points close to existing maxima
+
+- Principal Compenent Analysis (PCA) to identify those features which make significant difference to the result
+
+## Week By Week Strategy
 
 Week 1: I wasn’t sure what to expect so used a conservative, exploratory approach for all functions
 
@@ -131,7 +137,7 @@ Other libraries I could have used are:
 
 - PyTorch
 
-I’ve used Numpy, a Gaussian Process and ConstantKernel because they perform particularly well given our very small dataset and the high cost of obtaining additional results.
+I’ve used Numpy, a Gaussian Process and LLMs because they perform particularly well given our very small dataset and the high cost of obtaining additional results.
 
 I didn't use:
 
