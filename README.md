@@ -69,7 +69,7 @@ The most relevant ideas and techniques from that research are:
 
 - We can update the model each week, feeding back our latest findings an improving the accuracy of the model
 
-Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle the capstone challenge.
+Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle this capstone challenge.
 
 ## Technical Approach
 
