@@ -10,11 +10,11 @@ This mimics a common, real-world scenario where data scientists are asked to mak
 
 ## Navigating this repo
 
-- /code - contains the code to run the model (Capstone Wn All Functions v9.py)
-- /code/tools - contains tools to process results and update the Numpy arrays
-- /data - contains the Numpy arrays and a plain text version of each
-- /documentation - contains a Datasheet for the dataset and a Model Card for the model
-- /queries and results - contains a full list of both for all functions and a plot of F1 and F2 sample points
+- /code - contains the code to run the model. Begin with **Capstone Final Code Notebook.ipynb**
+- /code/tools - contains tools to update the Numpy arrays and out put them as plain text for review
+- /data - contains the Numpy arrays for each week of the project
+- /documentation - contains a **Datasheet for the dataset** and a **Model Card** for the model
+- /queries and results - contains a spreadsheet with a tab showing the query and result for each function each week
 
 
 ## Input and Outputs
