@@ -7,7 +7,7 @@ As can be seen from the **Week By Week** summary of my strategy in the main Read
 
 ## This is how I used the LLM recommendations
 
-**Week 8:** The course introduced LLMs so I asked ChapGPT to recommend sample points for functions 1 and 2. I retained the ConstantKernal, UCB and low Kappa configuration for functions 3, 4 and 6, switched to Matern Kernel for F5 hoping to encourage even more exploitation and added WhiteKernel for F8 in case it was prone to noise. This yielded my first improvement for F2 but no improvement for any of the other functions.
+**Week 8:** The course introduced LLMs so I asked ChapGPT to recommend sample points for functions 1 and 2. This yielded my first improvement for F2 but no improvement for any of the other functions.
 
 **Week 9:** Because of the improvement I’d achieved using an LLM the previous week, I decided to use ChatGPT for all functions this week. I prompted it to use Temperature = 0.1, Top-k = 3, Top-p = 3 to bias it towards exploitation. This yielded an improvement in F5 and F6 but none of the other functions.
 
@@ -15,4 +15,4 @@ As can be seen from the **Week By Week** summary of my strategy in the main Read
 
 **Week 11:** This week I used ChatGPT to recommend hyperparameters for my Gaussian Process and acquisition function. I fed it the dataset for one function at a time and asked it “Which hyperparameters should I use for my Gaussian Process in order to find a sample point which yields the highest possible result.” Then I ran my GP with those settings and checked the result it forecast for each function. In many cases, the forecast was less than my current best so I discarded most of those recommendations and reverted to the hyperparameters from Week 8 and manually selected a sample point for F1. This yielded my first ever improvement in F1 as well as improvements in F5 and F7.
 
-**Week 12:** I switched most functions to Matern Kernel with a mixture of UCB and EI acquisition functions. I also applied PCA to all of the functions and used the findings to manually tweak a few of the parameters for F4 and F5 prior to submission. I also asked Claude to recommend a sample point for F6 in the same manner I’d prompted ChatGPT in weeks 9 and 10. This yielded improvements in F3 but none of the other functions.
+**Week 12:** I asked Claude to recommend a sample point for F6 in the same manner I’d prompted ChatGPT in weeks 9 and 10. This yielded no improvement in the results.
