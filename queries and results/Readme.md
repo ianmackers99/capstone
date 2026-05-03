@@ -21,4 +21,4 @@ The **Highest Datapoint** column shows the points at which the result improved f
 
 I used LLMs to recommend sample points or hyperparameters for some functions during weeks 8, 9, 10, 11 and 12
 
-The **LLM prompts** subdirectory provides more detail on those prompts and the results
+The **LLM prompts** subdirectory provides more detail on those prompts and the responses
