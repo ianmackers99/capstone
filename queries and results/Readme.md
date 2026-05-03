@@ -1,5 +1,5 @@
 # Capstone queries and results.xlsx
-This Excel spreadsheet contains one tab for each of the eight funtions
+This Excel spreadsheet contains one tab for each of the eight functions
 
 Each tab contains the intitial dataset and the queries (**predictions**) which I submitted for each function over the course of the project
 
