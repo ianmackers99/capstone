@@ -1,5 +1,8 @@
-# Imperial College London - ML/AI Course - BBO Capstone Project
-## Project Overview
+# Imperial College London - ML/AI Course - May 2026
+
+## BBO Capstone Project
+
+### Project Overview
 
 The Black Box Optimisation (BBO) Capstone Project is a challenge designed to test a student’s knowledge and understanding of Machine Learning (ML) tools.
 
