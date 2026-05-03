@@ -5,7 +5,7 @@ Each tab contains the intitial dataset and the queries (**predictions**) which I
 
 The **Datapoints** are numbered beginning at 1 for the first datapoint in the initial dateset supplied by the faculty through to the last datapoint in week 13 of the capstone project.
 
-The **Preds** column represents the actual query I submitted for processing regardless of source
+The **Preds** column represents the input submitted for processing regardless of source
 
 The **Improvement Over Time** plot shows exactly that.
 
