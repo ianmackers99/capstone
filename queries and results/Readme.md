@@ -13,7 +13,7 @@ The best result for each function is highlighted in red
 
 The **Highest Datapoint** column shows the points at which the result improved for that function
 
-# LLMs
+# LLMs prompts
 
 I used LLMs to recommend sample points for some functions during weeks 8, 9, 10 and 11
 
