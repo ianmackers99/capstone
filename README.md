@@ -98,21 +98,32 @@ I've also used:
 ## Week By Week Strategy
 
 Week 1: I wasn’t sure what to expect so used a conservative, exploratory approach for all functions, ConstantKernal with an Upper Control Bound (UCB) acquisition function and Kappa 20. This yielded an improvement in the results of F4, F5 and F8 which was very encouraging.
+
 Week 2, I increased Kappa to 20 for all functions except F1 and F2 to encourage even more exploration. I manually selected sample points for F1 and F2 in the middle of unexplored regions but they didn’t yield an improvement. However, the results of my Gaussian Process (GP) predictions for F5, F7 and F8 all improved.
+
 Week 3, I decided to try an Expected Improvement (EI) acquisition function for all functions to get a better understanding of how it performs relative to UCB. It only improved the result of F8.
+
 Week 4: I stuck with my EI acquisition function to give it a fair shot at proving itself to be effective. This yielded another improvement for F8 but no improvement for the other functions.
+
 Week 5: I could still see some large unexplored regions in F1 and F2 so overrode my model again and manual selected sample points in the middle of those regions. I used my EI acquisition function for the other functions and lowered Xi from 0.1 to 0.01 for F8 only. This yielded an improvement for F6 but no other function.
+
 Week 6: I decided to give EI one last try and used the same hyperparameters as the previous week except for F1, for which I manually selected another sample point. I made no gains in any of the functions this week.
+
 Week 7: As we entered the second half of the capstone project, I switched back to UCB and lowered Kappa of 0.1 for all functions to encourage exploitation. I also switched from ConstantKernel to Matern Kernel for F8 hoping it would exploit the promising region that I’d found during the first 4 weeks. This yielded my first ever improvement for F3 and further improvements in F5, F6 and F7. This was my best week since the start of the project.
+
 Week 8: The course introduced LLMs so I asked ChapGPT to recommend sample points for functions 1 and 2. I retained the ConstantKernal, UCB and low Kappa configuration for functions 3, 4 and 6, switched to Matern Kernel for F5 hoping to encourage even more exploitation and added WhiteKernel for F8 in case it was prone to noise. This yielded my first improvement for F2 but no improvement for any of the other functions.
+
 Week 9: Because of the improvement I’d achieved using an LLM the previous week, I decided to use ChatGPT for all functions this week. I prompted it to use Temperature = 0.1, Top-k = 3, Top-p = 3 to bias it towards exploitation. This yielded an improvement in F5 and F6 but none of the other functions.
+
 Week 10: I used ChatGPT for all functions again this week. I tightened up the prompts, telling it to select points close to my current best result and again told it to use Temperature = 0.1, Top-k = 3, Top-p = 3 in the prediction model. This yielded an improvement in F5 but none of the other functions.
+
 Week 11: This week I used ChatGPT to recommend hyperparameters for my Gaussian Process and acquisition function. I fed it the dataset for one function at a time and asked it “Which hyperparameters should I use for my Gaussian Process in order to find a sample point which yields the highest possible result.” Then I ran my GP with those settings and checked the result it forecast for each function. In many cases, the forecast was less than my current best so I discarded most of those recommendations and reverted to the hyperparameters from Week 8 and manually selected a sample point for F1. This yielded my first ever improvement in F1 as well as improvements in F5 and F7.
+
 Week 12: I switched most functions to Matern Kernel with a mixture of UCB and EI acquisition functions. I also applied PCA to all of the functions and used the findings to manually tweak a few of the parameters for F4 and F5 prior to submission. I also asked Claude to recommend a sample point for F6 in the same manner I’d prompted ChatGPT in weeks 9 and 10. This yielded improvements in F3 but none of the other functions.
+
 Week 13: For the final week I decided not to make any major changes and continued to use ConstantKernel with UCB for F1, Matern Kernel with UCB for F2, F3, F6 and F7 and Matern Kernel with EI for F4, F5 and F8. This yielded final round improvements in F4 and F8.
 
-A week-by-week breakdown of the hyperparameters used is included in **Capstone Week n All Functions.py** files the /code directory.
-
+The hyperparameters used to make the GP predictions each week can be found in the **Capstone Week n All Functions.py** files the /code directory.
 
 ## Alternatives Considered
 
