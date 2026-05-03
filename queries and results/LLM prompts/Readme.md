@@ -1,5 +1,5 @@
 # LLMs
-I used LLMs to recommend sample points for some functions during weeks 8, 9, 10 and 11
+I used LLMs to recommend sample points for some functions during weeks 8, 9, 10, 11 and 12
 
 This directory contains the prompts I used and the results returned.
 
