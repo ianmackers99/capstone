@@ -5,7 +5,7 @@ This directory contains the prompts I used and the results returned.
 
 As can be seen from the **Week By Week** summary of my strategy in the main Readme for this repo, the LLM recommendations were not always sensible so I didn't always use them. This directory contains a record of the prompts and the raw results obtained, regardless of whether or not they were submitted for processing.
 
-## This is how I used the LLM recommendations
+## This is how I used LLM recommendations
 
 **Week 8:** The course introduced LLMs so I asked ChapGPT to recommend sample points for functions 1 and 2. This yielded my first improvement for F2 but no improvement for any of the other functions.
 
