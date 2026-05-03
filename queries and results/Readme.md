@@ -19,4 +19,4 @@ The **Highest Datapoint** column shows the points at which the result improved f
 
 I used LLMs to recommend sample points for some functions during weeks 8, 9, 10 and 11
 
-The LLM prompts directory provides more detail on those prompts and the results
+The **LLM prompts** subdirectory provides more detail on those prompts and the results
