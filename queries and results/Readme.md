@@ -1,12 +1,12 @@
-#LLMs
+# LLMs
 I used LLMs to recommend sample points for some functions during weeks 8, 9, 10 and 11
 
 This directory contains the prompts I used and the results returned.
 
-##LLM strategy
+## LLM strategy
 As can be seen from the **Week By Week** summary of my strategy in the main Readme for this repo, the LLM recommendations were not always sensible so I didn't always use them. But this directory contains a record of the prompts and the raw results obtained.
 
-###Summary of how I used the LLM recommendations
+### Summary of how I used the LLM recommendations
 
 **Week 8:** The course introduced LLMs so I asked ChapGPT to recommend sample points for functions 1 and 2. I retained the ConstantKernal, UCB and low Kappa configuration for functions 3, 4 and 6, switched to Matern Kernel for F5 hoping to encourage even more exploitation and added WhiteKernel for F8 in case it was prone to noise. This yielded my first improvement for F2 but no improvement for any of the other functions.
 
