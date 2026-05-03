@@ -14,9 +14,9 @@ This mimics a common, real-world scenario where data scientists are asked to mak
 ### Navigating this repo
 
 - /code - contains the code to run the model. Begin with **Capstone Final Code Notebook.ipynb**.
-- /data - contains the Numpy arrays for each week of the project
+- /data - contains the **Numpy arrays** for each week of the project
 - /documentation - contains a **Datasheet for the dataset** and a **Model Card** for the model
-- /queries and results - contains a spreadsheet with a tab showing the query and result for each function each week and the improvement over time
+- /queries and results - contains a **spreadsheet** with a tab showing the query and result for each function each week and the improvement over time
 
 ### Input and Outputs
 
