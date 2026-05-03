@@ -9,7 +9,7 @@ The **Preds** column represents the actual query I submitted for processing rega
 
 The **Improvement Over Time** plot shows exactly that.
 
-The **Excluded from plot** column contains those datapoints which are so far out of range they render Improvement Over Time plot unusable unless excluded.
+The **Excluded from plot** column contains those datapoints which are so far out of range they render Improvement Over Time plot unusable and so are excluded
 
 The best result for each function is highlighted in red
 
