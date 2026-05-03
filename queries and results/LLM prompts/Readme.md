@@ -15,4 +15,4 @@ As can be seen from the **Week By Week** summary of my strategy in the main Read
 
 **Week 11:** This week I used ChatGPT to recommend hyperparameters for my Gaussian Process and acquisition function. I fed it the dataset for one function at a time and asked it “Which hyperparameters should I use for my Gaussian Process in order to find a sample point which yields the highest possible result.” Then I ran my GP with those settings and checked the result it forecast for each function. In many cases, the forecast was less than my current best so I discarded most of those recommendations and reverted to the hyperparameters from Week 8 and manually selected a sample point for F1. This yielded my first ever improvement in F1 as well as improvements in F5 and F7.
 
-**Week 12:** I asked Claude to recommend a sample point for F6 in the same manner I’d prompted ChatGPT in weeks 9 and 10. This yielded no improvement in the results.
+**Week 12:** I asked Claude to recommend a sample point for F6 in the same manner I’d prompted ChatGPT in weeks 9 and 10. This yielded no improvement in the result.
