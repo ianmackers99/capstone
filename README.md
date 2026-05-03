@@ -11,7 +11,7 @@ The overall goal of the capstone project is to find the maximum output values of
 This mimics a common, real-world scenario where data scientists are asked to make predictions based on limited initial information and then update those predictions as additional data is received.
 
 
-## Navigating this repo
+### Navigating this repo
 
 - /code - contains the code to run the model. Begin with **Capstone Final Code Notebook.ipynb**.
 - /code/tools - contains tools to update the Numpy arrays each week and output them as plain text for review
@@ -20,7 +20,7 @@ This mimics a common, real-world scenario where data scientists are asked to mak
 - /queries and results - contains a spreadsheet with a tab showing the query and result for each function each week and the improvement over time
 
 
-## Input and Outputs
+### Input and Outputs
 
 At the beginning of the challenge, students are given a small, initial input and output dataset for each function in the form of Numpy arrays. The number of dimensions for each function varies between 2 and 8 and the number of initial samples varies between 10 and 40.
 
@@ -45,7 +45,7 @@ The results returned by the black box might look like this:
 Students add the new queries and corresponding results to the Numpy arrays each week and use them to train their model the following week.
 
 
-## Challenge Objective
+### Challenge Objective
 
 The overall goal of the capstone project is to find the maximum output values of each of the eight, hidden black box functions.
 
@@ -54,7 +54,7 @@ This is tricky because students begin with a very small dataset and can make onl
 To add to the challenge, the form of each function is unknown at the outset and there is a delay of several days between the student submitting their queries and receiving the results.
 
 
-## Why Bayesian Optimisation ?
+### Why Bayesian Optimisation ?
 
 There are two main drivers for using Bayesian Optimisation via a Gaussian Process for the capstone challenge:
 1.	We have a very small dataset
@@ -74,7 +74,7 @@ The most relevant ideas and techniques from that research are:
 
 Together, these factors make a compelling case for using Bayesian Optimisation and a Gaussian Process to tackle this capstone challenge.
 
-## Technical Approach
+### Technical Approach
 
 I’ve used Bayesian Optimisation by implementing:
 
@@ -98,9 +98,9 @@ I've also used:
 
 - Principal Compenent Analysis (PCA) to identify those features which make a significant difference to the result
 
-## Week By Week Strategy
+### Week By Week Strategy
 
-Week 1: I wasn’t sure what to expect so used a conservative, exploratory approach for all functions, ConstantKernal with an Upper Control Bound (UCB) acquisition function and Kappa 20. This yielded an improvement in the results of F4, F5 and F8 which was very encouraging.
+**Week 1:** I wasn’t sure what to expect so used a conservative, exploratory approach for all functions, ConstantKernal with an Upper Control Bound (UCB) acquisition function and Kappa 20. This yielded an improvement in the results of F4, F5 and F8 which was very encouraging.
 
 Week 2, I increased Kappa to 20 for all functions except F1 and F2 to encourage even more exploration. I manually selected sample points for F1 and F2 in the middle of unexplored regions but they didn’t yield an improvement. However, the results of my Gaussian Process (GP) predictions for F5, F7 and F8 all improved.
 
@@ -128,7 +128,7 @@ Week 13: For the final week I decided not to make any major changes and continue
 
 The hyperparameters used to make the GP predictions each week can be found in the **Capstone Week n All Functions.py** files in the /code directory.
 
-## Alternatives Considered
+### Alternatives Considered
 
 Other libraries I could have used are:
 
@@ -149,7 +149,7 @@ I didn't use:
 - Tensorflow, Keras or Pytorch because I don’t think they’ll cope well with our small dataset
 
 
-## Documents Referenced
+### Documents Referenced
 
 I’ve used these references which were provided by the faculty:
 
