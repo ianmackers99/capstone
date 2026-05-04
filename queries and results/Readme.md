@@ -17,7 +17,7 @@ The **Best Result** and **Best Strategy** are highlighted in red
 
 The **Highest Datapoint** column shows the points at which the result improved for that function
 
-# LLMs prompts
+## LLMs prompts
 
 I used LLMs to recommend sample points or hyperparameters for some functions during weeks 8, 9, 10, 11 and 12
 
