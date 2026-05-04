@@ -126,6 +126,8 @@ I've also used:
 
 The hyperparameters used to make the GP predictions each week can be found in the **Capstone Week n All Functions.py** files in the /code directory.
 
+The LLM prompts used in weeks 8 through 12 can be found in the **/queries and results/LLM prompts** directory.
+
 ### Alternatives Considered
 
 Other libraries I could have used are:
