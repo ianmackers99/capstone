@@ -124,7 +124,7 @@ I've also used:
 
 **Week 13:** For the final week I decided not to make any major changes and continued to use ConstantKernel with UCB for F1, Matern Kernel with UCB for F2, F3, F6 and F7 and Matern Kernel with EI for F4, F5 and F8. This yielded final round improvements in F4 and F8.
 
-The hyperparameters used to make the GP predictions each week can be found in the **Capstone Week n All Functions.py** files in the /code directory https://github.com/ianmackers99/capstone/tree/main/code along with a **notebook** explaining how the code works.
+The hyperparameters used to make the GP predictions each week can be found in the **Capstone Week n All Functions.py** files in the [/code](https://github.com/ianmackers99/capstone/tree/main/code )directory along with a **notebook** explaining how the code works.
 
 The LLM prompts used in weeks 8 through 12 can be found in the **/queries and results/LLM prompts** directory.
 
