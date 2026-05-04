@@ -1,7 +1,7 @@
 # Capstone queries and results.xlsx
 This Excel spreadsheet contains one tab for each of the eight functions
 
-Each tab contains the intitial dataset and the queries (**predictions**) which I submitted for each function over the course of the project
+Each tab contains the initial dataset and the queries (**predictions**) which I submitted for each function over the course of the project
 
 The **Datapoints** are numbered beginning at 1 for the first datapoint in the initial dateset supplied by the faculty through to the last datapoint in week 13 of the capstone project.
 
