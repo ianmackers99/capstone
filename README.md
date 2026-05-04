@@ -13,10 +13,10 @@ This mimics a common, real-world scenario where data scientists are asked to mak
 
 ### Navigating this repo
 
-- /code - contains the code to run the model. Begin with **Capstone Final Code Notebook.ipynb**.
-- /data - contains the **Numpy arrays** for each week of the project
-- /documentation - contains a **Datasheet** for the dataset and a **Model Card** for the model
-- /queries and results - contains a **spreadsheet** with a tab showing the query and result for each function each week and the improvement over time
+- [/code](https://github.com/ianmackers99/capstone/tree/main/code) - contains the code to run the model. Begin with **Capstone Final Code Notebook.ipynb**.
+- [/data](https://github.com/ianmackers99/capstone/tree/main/data) - contains the **Numpy arrays** for each week of the project
+- [/documentation](https://github.com/ianmackers99/capstone/tree/main/documentation) - contains a **Datasheet** for the dataset and a **Model Card** for the model
+- [/queries and results]([https://github.com/ianmackers99/capstone/tree/main/code](https://github.com/ianmackers99/capstone/tree/main/queries%20and%20results) - contains a **spreadsheet** with a tab showing the query and result for each function each week and the improvement over time
 
 ### Input and Outputs
 
