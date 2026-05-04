@@ -23,4 +23,4 @@ I used LLMs to recommend sample points or hyperparameters for some functions dur
 
 The **LLM prompts** subdirectory provides more detail on those prompts and the responses
 
-Note that I didn't always use the LLM recommendations. I describe the cases where I did use them in the **Week by week strategy** section of the main repo Readme file
+Note that I didn't always use the LLM recommendations. I describe the cases where I did use them in the **Week by week strategy** section of the main repo [Readme](https://github.com/ianmackers99/capstone/tree/main) file
