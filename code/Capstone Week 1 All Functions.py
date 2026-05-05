@@ -6,6 +6,7 @@
 ##      1. place the numpy input and output files in a /data folder (for Week 1, these will be the initial dataset provided by the faculty)
 ##          - the input vaiable file must be called "f<function #>_w<week #>_input.npy" i.e. f1_w1_inputs.npy
 ##          - the output vaiable file must be called "f<function #>_w<week #>_output.npy" i.e. f1_w1_outputs.npy
+##          So, a typical filepath will be C:/users/ianma/module0_capstone/week_1/data/f1_w1_inputs.npy
 ##      2. In the global variables:
 ##          - set the 'week' variable to be this week of the capstone project
 ##          - set the 'functionID' variable to be the value of the function number (1 through 8) you wish to generate a sample point for
