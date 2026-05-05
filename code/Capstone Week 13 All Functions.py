@@ -2,10 +2,11 @@
 ##
 ## This script uses Bayesian Optimisation with a UCB or EI acquisition function to select the next sample point for the ICL ML/AI captone project
 ## 
-## To use this code:
-##      1. update the numpy input and output files with last week's queries and results and place them in a /data folder
-##          - the input vaiable file must be called "f<function #>_w<week #>_input.npy" e.g. f2_w6_inputs.npy
-##          - the output vaiable file must be called "f<function #>_w<week #>_output.npy" e.g. f2_w6_outputs.npy
+## To use this script:
+##      1. Place the numpy input and output files containing this week's data in folder called /week_n/data folder (e.g. /week_2/data)
+##          - the input variable file must be called function_week_inputs.npy e.g. f2_w6_inputs.npy
+##          - the output variable file must be called function_week_outputs.npy e.g. f2_w6_outputs.npy
+##          So, a typical filepath will be C:/users/ianma/module0_capstone/week_2/data/f2_w6_inputs.npy
 ##      2. In the global variables:
 ##          - set the 'week' variable to be this week of the capstone project
 ##          - set the 'functionID' variable to be the value of the function number (1 through 8) you wish to generate a sample point for
